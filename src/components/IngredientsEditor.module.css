@@ -1,0 +1,171 @@
+.wrap {
+    display: grid;
+    gap: 8px;
+}
+
+.headerRow {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr 0.9fr 1fr 28px;
+    gap: 8px;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr 0.9fr 1fr 28px;
+    gap: 8px;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d1d5db;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+.deleteBtn {
+    width: 28px;
+    height: 28px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d1d5db;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.addBtn {
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: #9ca3af;
+    border-radius: 12px;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+.unitButton {
+    font-size: 18px;
+    height: 44px;
+    padding-top: 10px;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.18);
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.sheetBackdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    z-index: 9999;
+}
+
+.sheet {
+    width: 100%;
+    max-width: 520px;
+    color: rgba(255, 255, 255, 0.92);
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background-color: rgba(20, 20, 20, 0.98);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    max-height: 70vh;
+    overflow: hidden;
+}
+
+.sheetTitle {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.80);
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.sheetList {
+    display: grid;
+    gap: 8px;
+    overflow: auto;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+}
+
+.sheetItem {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.92);
+    background-color: rgba(255, 255, 255, 0.06);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.10);
+    border-radius: 14px;
+    padding-top: 12px;
+    padding-right: 14px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+    text-align: left;
+}
+
+.sheetItem:active {
+    transform: scale(0.99);
+}
+
+.sheetItemSelected {
+    background-color: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 255, 255, 0.22);
+}
+
+.sheetClose {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.92);
+    background-color: rgba(255, 255, 255, 0.10);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.14);
+    border-radius: 14px;
+    padding-top: 12px;
+    padding-right: 14px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+}
