@@ -1,16 +1,11 @@
 "use client";
-
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-
 import { collection, onSnapshot, orderBy, query, Timestamp } from "firebase/firestore";
 import { db } from "@/lib/firebase/client";
 import { ensureAnonymousAuth } from "@/lib/auth/ensureAuth";
-
 import styles from "./page.module.css";
-// もし既にフッターナビがあるなら使う
-// import FooterNav from "@/components/layout/FooterNav";
 
 type RecipeDoc = {
     id: string;
@@ -41,6 +36,7 @@ const formatYmd = (t?: Timestamp | null) => {
     const day = String(d.getDate()).padStart(2, "0");
     return `${y}-${m}-${day}`;
 };
+
 
 export default function RecipeListPage() {
     const router = useRouter();
