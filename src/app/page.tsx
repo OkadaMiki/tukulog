@@ -20,7 +20,8 @@ const TAG_OPTIONS = [
   "作り置き",
 ] as const;
 
-type PreviewResult = Omit<RecipeDraft, "ingredientsBase">;
+type PreviewResult = Omit<RecipeDraft, "ingredientsBase" | "tags">;
+
 type PreviewResponse = {
   urlFinal: string;
   canonicalUrl: string;
